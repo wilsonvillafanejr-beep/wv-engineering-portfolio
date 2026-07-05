@@ -1829,6 +1829,27 @@
 
       <div class="projects-grid" id="projects-grid">
 
+        <!-- Project 0: Self-Balancing Cube -->
+        <div class="project-card reveal" data-category="robotics" data-project="balance-cube">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #1a0f2e, #3b1a5e);">
+            <div class="project-thumb-inner">&#9878;&#65039;</div>
+            <div class="project-thumb-overlay"></div>
+            <span class="project-category-badge">Robotics</span>
+          </div>
+          <div class="project-info">
+            <div class="project-date">Jul 2026 &mdash; Present</div>
+            <h3>Self-Balancing Cube</h3>
+            <p>Collaborative project with Tufts University: a cube that balances on a single corner using reaction wheels, IMU sensing, and PID control on Arduino.</p>
+            <div class="project-tech">
+              <span>Arduino</span>
+              <span>SolidWorks</span>
+              <span>PID Control</span>
+              <span>C++</span>
+            </div>
+            <span class="project-link">View Details <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </div>
+
         <!-- Project 1: Robotic Arm -->
         <div class="project-card reveal" data-category="robotics" data-project="robotic-arm">
           <div class="project-thumb" style="background: linear-gradient(135deg, #0f172a, #1e3a5f);">
@@ -2111,6 +2132,13 @@
           <h3>Puerto Rican Student Association</h3>
           <p>Serve in a leadership role at Northeastern University coordinating cultural programming, community outreach events, and initiatives celebrating Puerto Rican heritage on campus.</p>
         </div>
+
+        <div class="activity-card reveal">
+          <div class="activity-icon">&#127937;</div>
+          <div class="activity-date">Sep 2024 &mdash; Present</div>
+          <h3>Formula 1 Engineering Analysis Club</h3>
+          <p>Collaborate with fellow Northeastern engineering students to analyze the technical side of Formula 1 racing, covering aerodynamic design, powertrain systems, race strategy optimization, and the impact of FIA regulation changes on vehicle performance.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -2200,6 +2228,21 @@
   <script>
     // ========== PROJECT DATA ==========
     const projectData = {
+      'balance-cube': {
+        icon: '⚖️',
+        bg: 'linear-gradient(135deg, #1a0f2e, #3b1a5e)',
+        date: 'Jul 2026 — Present',
+        title: 'Self-Balancing Cube',
+        desc: 'A collaborative project with Tufts University to design and build a cube that balances on a single corner using three brushless DC reaction wheels, an IMU sensor, and PID control algorithms programmed in C++ on an Arduino microcontroller. The cube frame and internal mounting hardware are modeled in SolidWorks and fabricated using 3D printing.',
+        highlights: [
+          'Design and build a cube that balances on a single corner using reaction wheels and PID control',
+          'Model the cube frame and internal mounting hardware in SolidWorks',
+          'Fabricate structural and mounting components using 3D printing',
+          'Tune PID control loops for real-time stability using gyroscope and accelerometer feedback',
+          'Drive three brushless DC reaction wheels via IMU sensor data processing'
+        ],
+        tech: ['Arduino', 'C++', 'SolidWorks', 'PID Control', 'IMU Sensor', '3D Printing', 'Reaction Wheels']
+      },
       'robotic-arm': {
         img: 'images/robotic-arm.png',
         bg: 'linear-gradient(135deg, #0f172a, #1e3a5f)',
